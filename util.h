@@ -52,14 +52,14 @@ struct block_device {
 
 struct blkdev_info *blkdev_get_info(const unsigned char *node);
 		
-unsigned long *blkdev_info_conv_to_metric(struct blkdev_info *info);
+unsigned const *blkdev_info_conv_to_metric(struct blkdev_info *info);
 
-unsigned long *blkdev_info_blocks_to_mb(struct blkdev_info *info);
+unsigned const *blkdev_info_blocks_to_mb(struct blkdev_info *info);
 
-unsigned long *blkdev_info_blocks_to_gb(struct blkdev_info *info);
+unsigned const *blkdev_info_blocks_to_gb(struct blkdev_info *info);
 
 
-unsigned long *blkdev_info_conv_to_blocks(struct blkdev_info *info);
+unsigned const *blkdev_info_conv_to_blocks(struct blkdev_info *info);
 
 
 
