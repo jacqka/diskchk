@@ -4,44 +4,6 @@
 #include<stdlib.h>
 #include<sys/mountP.h>
 
-struct block_device {
-		
-	struct libmnt_context *ctx;
-	struct libmnt_table *tb;
-
-	const unsigned char *blk_name = NULL;
-	const unsigned char fstab;
-	
-};
-
-struct disk_space {
-
-	unsigned int free;
-	unsigned int total;
-
-(unsigned int *)
-
-};
-
-struct disk_usage {
-	
-	unsigned long blocks;
-	unsigned long blocks_free;
-
-	struct disk_space mb;
-	struct disk_space gb;
-
-	size_t *dev;
-
-}
-
-int block_dev_get_info(const unsigned char *fstab){
-
-	struct statvfs blk_dev;
-
-		unsigned long *total_blks = (void *)malloc(sizeof(blk_dev.f_blocks));
-		
-
 
 int main(int argc, char *argv[]){
 
@@ -85,3 +47,12 @@ int main(int argc, char *argv[]){
 			block_dev_get_info(mnt.fstab);
 	
 	
+
+
+
+
+
+
+
+
+
