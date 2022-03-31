@@ -29,8 +29,8 @@ struct blkdev_info {
 
 	struct statvfs *dev;
 
-	const unsigned long int blocks;
-	const unsigned long int total;
+	const unsigned int blocks;
+	const unsigned int total;
 
 	bool v_ns;
 }
